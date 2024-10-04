@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD Form with LocalStorage</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h2>Formulaire</h2>
+    <form id="Form">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" placeholder="nom" required> <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Email" required> <br>
+        <button type="submit" id="Create">Ajouter</button>
+    </form> <br>
+    <button id="DeleteAll" style="display:none;" onclick="deleteAll()">Delete All</button>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>nom</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+</html>
+<!-- C Create
+R read
+U Update
+D Delete -->
